@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Malgun Gothic";
+    src: url("../fonts/Malgun-Gothic_29381.ttf") format("truetype");
+}
+.advantages div{
+    text-align: center;
+}
+.planet{
+    background:center no-repeat url(../images/global-outlined-planetary-grid.png);
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.client{
+    background:center no-repeat url("../images/user.png");
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.clock{
+    background:center no-repeat url("../images/clock.png");
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.landmark{
+    background:center no-repeat url("../images/placeholder-outline.png");
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.slider{
+    margin-bottom: 15px;
+}
+h2{
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #3dc8bd;
+    text-transform: uppercase;
+}
+/*h2:after{*/
+
+/*}*/
+h4{
+    font-family: "Malgun Gothic";
+    font-weight: normal;
+}
+p{
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #6d7276;
+    font-weight: lighter;
+}
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 125px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 125px;
+}
+
+.text-center>h4{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #3b3e3b;
+    font-weight: bolder;
+}
