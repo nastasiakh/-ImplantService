@@ -6,6 +6,69 @@
     font-family: "Malgun Gothic";
     src: url("../fonts/Malgun-Gothic_29381.ttf") format("truetype");
 }
+@font-face{
+    font-family: "MyriadPro";
+    src: url("../fonts/myriadpro-semibold.ttf") format("truetype");
+}
+.azure{
+    color: #3dc8bd;
+}
+.blue{
+    color: #005f8b;
+}
+.corbel-font{
+    font-family: Corbel;
+}
+.myriad-font{
+    font-family: "MyriadPro";
+}
+a, a:visited, a:hover{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+/*Head*/
+.head{
+    margin: 52px 0 37px 0;
+}
+.logo .blue{
+    font-size: 43px;
+    margin: 0;
+    position: relative;
+
+}
+.logo .azure{
+    font-size: 35.5px;
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding-top: 0;
+    width: 90px;
+    height: 32px;
+    right: 690px;
+    top: 82px;
+}
+.soc-media{
+    margin-top: auto;
+    width: 130px;
+    padding-left: 0;
+}
+.soc-media li{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #15608b;
+}
+
+/*Menu*/
+.callback{
+    margin-left: 47px;
+}
+.phone{
+    margin-left: 28px;
+}
 .advantages div{
     text-align: center;
 }
