@@ -28,27 +28,50 @@ a, a:visited, a:hover{
 ul li{
     list-style: none;
 }
+@media (max-width: 575.98px) {
 
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 1199.98px) {
+
+}
 /*Head*/
 .head{
     margin: 52px 0 37px 0;
+    position: relative;
+}
+.lang{
+    display: block;
+    padding: 15px;
+}
+.logo{
+    padding-bottom:14px;
+    position: relative;
 }
 .logo .blue{
     font-size: 43px;
     margin: 0;
+    padding: 0;
     position: relative;
-
 }
-.logo .azure{
+.logo .azure {
     font-size: 35.5px;
     position: absolute;
     content: "";
     margin: 0;
-    padding-top: 0;
+    padding: 0;
     width: 90px;
     height: 32px;
-    right: 690px;
-    top: 82px;
+    left: 61px;
+    top: 31px;
 }
 .soc-media{
     margin-top: auto;
@@ -61,80 +84,158 @@ ul li{
     border-radius: 50%;
     background-color: #15608b;
 }
+.navbar-toggler{
+    background-color: violet;
+    border: 1px solid violet;
+}
+nav{
+    position: absolute;
+    content: "";
+}
 
-/*Menu*/
+/*Nav*/
 .callback{
     margin-left: 47px;
 }
 .phone{
     margin-left: 28px;
 }
+
+/*Main*/
+/*Slider*/
+.banner{
+    position: relative;
+    background-image: url("../images/csm_Surgical_instruments_traumatology_1920x495_01_aa87c29d65.png");
+    height: 100%;
+}
+.banner:after{
+    position: absolute;
+    content: "";
+
+
+}
+
+.advantages{
+    margin-bottom: 84px;
+}
+
 .advantages div{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    padding-top: 90px;
+    margin-bottom: 70px;
     text-align: center;
 }
-.planet{
-    background:center no-repeat url(../images/global-outlined-planetary-grid.png);
+.planet:before{
+    background-image: url("../images/global-outlined-planetary-grid.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 130px;
     width: 60px;
     height: 60px;
-    position: relative;
 }
-.client{
-    background:center no-repeat url("../images/user.png");
+.client:before{
+    background-image: url("../images/user.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 130px;
     width: 60px;
     height: 60px;
-    position: relative;
 }
-.clock{
-    background:center no-repeat url("../images/clock.png");
+.clock:before{
+    background-image: url("../images/clock.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 130px;
     width: 60px;
     height: 60px;
-    position: relative;
 }
-.landmark{
-    background:center no-repeat url("../images/placeholder-outline.png");
+.landmark:before{
+    background-image: url("../images/placeholder-outline.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 130px;
     width: 60px;
     height: 60px;
-    position: relative;
 }
 
 .slider{
     margin-bottom: 15px;
 }
-h2{
+h2 {
     font-family: "Open Sans";
     font-size: 16px;
     color: #3dc8bd;
     text-transform: uppercase;
+    position: relative;
 }
-/*h2:after{*/
-
-/*}*/
-h4{
+h2:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #3dc8bd;
+    top: 26px;
+    left: 0;
+}
+.advantages p{
     font-family: "Malgun Gothic";
     font-weight: normal;
 }
-p{
+.advantages p+p{
     font-family: "Open Sans";
     font-size: 12px;
     color: #6d7276;
     font-weight: lighter;
 }
-.owl-carousel .owl-nav button.owl-next{
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 125px;
-}
+.owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev{
     position: absolute;
     content: "";
-    left: 0;
     top: 125px;
+    font-size: 50px;
+    color: #898d908c;
+    font-weight: 300;
 }
-
+.owl-carousel .owl-nav button.owl-next{
+    right:0;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    left:0;
+}
+.owl-carousel .owl-nav button.owl-next:focus,
+.owl-carousel .owl-nav button.owl-prev:focus{
+    color: #3dc8bd;
+    border: none;
+    outline:none;
+}
 .text-center>h4{
     text-transform: uppercase;
     font-size: 13px;
     color: #3b3e3b;
     font-weight: bolder;
+}
+.owl-carousel .owl-item{
+    /*margin: 15px 7.5px 0 7.5px;*/
+}
+.owl-carousel .owl-item:hover{
+    box-shadow: 0 3px 9px rgba(152,152,152,0.35);
+}
+section{
+    margin-bottom: 15px;
+}
+.feedback .owl-item img{
+    width: 50%;
+    display: block;
+    border-radius:50% ;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
@@ -13,19 +13,18 @@
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
-        <header class="container">
+        <header class="container justify-content-around-xs">
             <section class="head row justify-content-between align-items-center">
-                <a class="lang dropdown blue" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU</a>
+                <a class="lang order-md-first dropdown blue" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">UA</a>
                     <a class="dropdown-item" href="#">ENG</a>
                 </div>
-                <div class="logo">
-                    <a href="#">
-                        <p class="blue myriad-font">Імплант</p>
-                        <p class="azure corbel-font">сервіс</p>
-                    </a>
-                </div>
+                <a class="logo" href="#">
+                    <p class="blue myriad-font">Імплант
+                        <span class="azure corbel-font">сервіс</span>
+                    </p>
+                </a>
                 <ul class="soc-media row justify-content-between">
                     <li><a href="#">F</a></li>
                     <li><a href="#">I</a></li>
@@ -33,75 +32,73 @@
                     <li><a href="#">Y</a></li>
                 </ul>
             </section>
-            <div class="row align-items-center justify-content-end">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <li class="nav-item dropdown">
-                             <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
-                             <div class="dropdown-menu">
-                                 <a class="dropdown-item" href="#">Травматология</a>
-                                 <div class="dropdown-divider"></div>
-                                 <a class="dropdown-item" href="#">Ортопедия</a>
-                                 <div class="dropdown-divider"></div>
-                                 <a class="dropdown-item" href="#">Спортивная травма</a>
-                                 <div class="dropdown-divider"></div>
-                                 <a class="dropdown-item" href="#">Нейрохирургия</a>
-                                 <div class="dropdown-divider"></div>
-                                 <a class="dropdown-item" href="#">инструменты</a>
-                                 <div class="dropdown-divider"></div>
-                                 <a class="dropdown-item" href="#">Оборудование</a>
-                             </div>
-                        </li>
+<!--            <div class="row align-items-center justify-content-end">-->
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О Нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Филиалы</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Сертификаты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Новости</a>
-                    </li>
-                </ul>
-                <a class="callback" href="#"><span>Обратный звонок</span></a>
-                <a class="phone blue" href="#"><span>(068) 068 11 33</span></a>
-            </div>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsed-area">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsed-area">
+                    <ul class="navbar-nav justify-content-center-lg">
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
+                                 <div class="dropdown-menu">
+                                     <a class="dropdown-item" href="#">Травматология</a>
+                                     <div class="dropdown-divider"></div>
+                                     <a class="dropdown-item" href="#">Ортопедия</a>
+                                     <div class="dropdown-divider"></div>
+                                     <a class="dropdown-item" href="#">Спортивная травма</a>
+                                     <div class="dropdown-divider"></div>
+                                     <a class="dropdown-item" href="#">Нейрохирургия</a>
+                                     <div class="dropdown-divider"></div>
+                                     <a class="dropdown-item" href="#">инструменты</a>
+                                     <div class="dropdown-divider"></div>
+                                     <a class="dropdown-item" href="#">Оборудование</a>
+                                 </div>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О Нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Филиалы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сертификаты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новости</a>
+                        </li>
+                    </ul>
+                    <a class="callback " href="#"><span>Обратный звонок</span></a>
+                    <a class="phone blue" href="#"><span>(068) 068 11 33</span></a>
+                </div>
+            </nav>
         </header>
+
         <main class="container">
             <section class="slider container-fluid">
                 <div>
-                    <div class=""></div>
+                    <div class="banner"></div>
                 </div>
             </section>
 
             <section class="advantages row justify-content-sm-around" >
                 <div class="planet col-12 col-md-6 col-lg">
-                    <div class="adv-text">
-                        <h4>Международный</h4>
+                        <p>Международный</p>
                         <p>стандарт качества</p>
-                    </div>
-
                 </div>
                 <div class="client col-12 col-md-6 col-lg">
-                    <div class="adv-text">
-                        <h4>Индивидуальный</h4>
+                        <p>Индивидуальный</p>
                         <p>подход к каждому клиенту</p>
-                    </div>
                 </div>
                 <div class="clock col-12 col-md-6 col-lg">
-                    <div class="adv-text">
-                        <h4>Оперативная</h4>
+                        <p>Оперативная</p>
                         <p>поддержка клиентов</p>
-                    </div>
                 </div>
                 <div class="landmark col-12 col-md-6 col-lg">
-                    <div class="adv-text">
-                        <h4>Комфортное</h4>
+                        <p>Комфортное</p>
                         <p>расположение филиалов</p>
-                    </div>
                 </div>
             </section>
 
@@ -173,16 +170,45 @@
                 </div>
             </section>
 
-            <section class="feedback">
-
+            <section class="feedbacks">
+                <h2>новые поступления</h2>
+                <div class="owl-carousel owl-theme feedback">
+                    <div class="item column justify-content-center align-content-center">
+                        <img src="images/otziv.png" alt="otziv"/>
+                        <div class="text-center azure">
+                            <p class="name">сергей верхов</p>
+                            <p class="job">Главврач клиники “Клиника”</p>
+                            <p class="quote">“ Качественные импланты по конкурентным ценам. <br>Работа менеджеров на высоте, очень оперативно. ”</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="guarantee">
-
+                <h2>новые поступления</h2>
+                <p class="azure">Сертификаты качества и соответствий</p>
+                <p>Имплант сервис является эксклюзивным дилером международной компании NX-Medical в Украине</p>
             </section>
 
             <section class="news">
+                <h2>новые поступления</h2>
+                <div class="owl-carousel owl-theme new-item">
+                    <div class="item">
+                        <div class="text-center">
+                            <span>международный эксперт:</span>
+                            <h4>Пьер Джорджио в одессе</h4>
+                            <p>Только 2 дня — 10 и 11 апреля 2019 в Одессе с рабочим визитом будет профессор Пьер Джорджио Вазина. Известный врач является специалистом по эндопротезированию суставов, практикующим хирургом-ортопедом Больницы Villalba в Болонье.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text-center">
+                            <span>Научно-практическая конференция в харькове:</span>
+                            <h4>Эндопротезирование тазобедренного сустава</h4>
+                            <p>Только 2 дня — 10 и 11 апреля 2019 в Одессе с рабочим визитом будет профессор Пьер Джорджио Вазина. Известный врач является специалистом по эндопротезированию суставов, практикующим хирургом-ортопедом Больницы Villalba в Болонье.</p>
+                        </div>
+                    </div>
 
+                </div>
             </section>
         </main>
         <footer>
@@ -192,8 +218,9 @@
         <script>
             $('.recomends').owlCarousel({
             loop:true,
-            margin:10,
+            margin:15,
             nav:true,
+            dots:false,
             responsive:{
                 0:{
                     items:1
@@ -205,11 +232,12 @@
                     items:4
                 }
             }
-        })
+            })
             $('.new-item').owlCarousel({
             loop:true,
             margin:10,
             nav:true,
+            dots:false,
             responsive:{
                 0:{
                     items:1
@@ -221,7 +249,24 @@
                     items:4
                 }
             }
-        })
+            })
+            $('.feedback').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                dots:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            })
         </script>
         
     </body>
