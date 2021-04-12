@@ -23,16 +23,49 @@
 }
 
 @media (min-width: 1200px) {
+    ul.full-menu{
+        width: 100%;
+    }
+    ul.full-menu li.nav-item:first-child{
+        background-color: #3dc8bd;
+        width: 24%;
+    }
     li.nav-item.dropdown>a {
-        padding: 22px 57px 21px 74px;
         display: block;
         font-size: 14px;
-        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        font-weight: 600;
     }
     li.nav-item>a{
-        padding: 23px 60px 22px 60px;
+        padding: 17px 60px 17px 60px;
         text-transform: uppercase;
         font-size: 13px;
+    }
+    ul.full-menu li.nav-item {
+        width: 15%;
+        text-align: center;
+    }
+    ul.full-menu li.nav-item:last-child{
+        width: 17.5%;
+        position: relative;
+    }
+    a.nav-link.callback.white {
+        display: block;
+        background-color: #c60d46;
+        padding: 12px 33px;
+        position: absolute;
+        top: 4px;
+    }
+    .header-menu{
+        position: relative;
+        border-top: rgba(226, 230, 233, 0.5) 1px solid;
+        border-bottom: rgba(226, 230, 233, 0.5) 1px solid;
+    }
+    a.phone.blue {
+        position: absolute;
+        top: 21px;
+        right: -7px;
     }
     .banner{
         background: url("../images/csm_Surgical_instruments_traumatology_1920x495_01_aa87c29d65.png") left no-repeat, url("../images/Слой 1.png") repeat-x right 216px;
@@ -124,12 +157,8 @@ nav{
 }
 
 /*Nav*/
-.callback{
-    margin-left: 47px;
-}
-.phone{
-    margin-left: 28px;
-}
+
+
 
 /*Main*/
 /*Slider*/
@@ -254,7 +283,7 @@ h2:after{
 .owl-carousel .owl-item:hover{
     box-shadow: 0 3px 9px rgba(152,152,152,0.35);
 }
-section{
+.margin-btm{
     margin-bottom: 15px;
 }
 .feedback .owl-item img{
