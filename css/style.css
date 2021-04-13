@@ -23,12 +23,36 @@
 }
 
 @media (min-width: 1200px) {
+    .navbar{
+        padding: 0 21px;
+    }
+    .dropdown-menu{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
     ul.full-menu{
         width: 100%;
     }
     ul.full-menu li.nav-item:first-child{
         background-color: #3dc8bd;
         width: 24%;
+    }
+    a.nav-link.dropdown-toggle.blue:before {
+        position: absolute;
+        content: "";
+        width: 19px;
+        height: 16px;
+        background: linear-gradient( #ffffff 1px, #ffffff,
+        transparent, transparent 6px,
+        #ffffff, #ffffff 9px,
+        transparent, transparent 12px,
+        #ffffff, #ffffff 16px);
+        top: 20px;
+        left: 30px;
+    }
+    a.nav-link.dropdown-toggle.blue:after {
+        content: none;
     }
     li.nav-item.dropdown>a {
         display: block;
@@ -64,7 +88,7 @@
     }
     a.phone.blue {
         position: absolute;
-        top: 21px;
+        top: 13px;
         right: -7px;
     }
     .banner{
@@ -74,13 +98,61 @@
         position: relative;
         margin: 0;
     }
-    .banner:before{
+    .text-banner{
         position: absolute;
         content: "";
         background: url("../images/triangles-png-46460.png") right no-repeat;
         width: 100%;
         height: 100%;
-        right: 347px;
+        right: 0;
+    }
+    .text-banner>p{
+        position: absolute;
+        right: 95px;
+        top: 95px;
+        opacity: 0.6;
+        font-family: 'Open Sans';
+        font-size: 13px;
+    }
+    .text-banner p:first-child{
+        opacity: 0.6;
+        font-size: 13px;
+    }
+    p.responsibility {
+        top: 190px;
+        text-transform: capitalize;
+        font-size: 31px;
+        font-weight: bold;
+        opacity: 0.9;
+    }
+    p.reliability {
+        font-size: 29px;
+        top: 223px;
+        text-transform: capitalize;
+        opacity: 0.75;
+    }
+    p.quality {
+        font-size: 25px;
+        top: 263px;
+        text-transform: capitalize;
+        opacity: 0.6;
+    }
+    span.implant-banner {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: 'Open Sans';
+        opacity: 1 !important;
+    }
+    a.podrobneebtn{
+        right: 95px;
+        top: 327px;
+        position: absolute;
+        display: block;
+        padding: 17px 45px;
+        background-color: #3dc8bd;
+        text-transform: uppercase;
+        font-size: 13px;
     }
 }
 .azure{
