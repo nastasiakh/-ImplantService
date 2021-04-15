@@ -61,6 +61,22 @@
         text-align: center;
         font-weight: 600;
     }
+    .dropdown .dropdown-menu {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .dropdown .dropdown-menu.show {
+        max-height: 300px;
+        opacity: 1;
+    }
     li.nav-item>a{
         padding: 17px 60px 17px 60px;
         text-transform: uppercase;
@@ -97,6 +113,33 @@
         background-position-x: 50px;
         position: relative;
         margin: 0;
+        z-index: 1;
+    }
+    .banner:after {
+        margin-left: 20px;
+        width: 236px;
+        height: 445px;
+        position: absolute;
+        content: "";
+        top: 0;
+        z-index: 5;
+        right: 258px;
+        transform: skew(24deg);
+        background: linear-gradient(to right, #eff1f3 60px, #ffff 60px, #fafafb 77px, #6bdbd5 77px);
+        opacity: 0.7;
+    }
+    .banner:before{
+        margin-left: 20px;
+        width: 226px;
+        height: 445px;
+        top: 0;
+        position: absolute;
+        content: "";
+        right: 260px;
+        transform: skew(-24deg);
+        background:#a3bcca;
+        opacity: 0.6;
+        z-index: 10;
     }
     .text-banner{
         position: absolute;
@@ -105,19 +148,34 @@
         width: 100%;
         height: 100%;
         right: 0;
+        z-index: 15;
     }
-    .text-banner>p{
+    .text-banner>p {
         position: absolute;
         right: 95px;
         top: 95px;
-        opacity: 0.6;
         font-family: 'Open Sans';
         font-size: 13px;
+        text-align: right;
     }
     .text-banner p:first-child{
         opacity: 0.6;
         font-size: 13px;
+        position: relative;
     }
+    .text-banner p:first-child:after{
+        position: absolute;
+        content: "";
+        width: 17px;
+        height: 5px;
+        background: #6bdbd5;
+    }
+    .text-banner p>span.implant-banner {
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 15px;
+         opacity: 1 !important;
+     }
     p.responsibility {
         top: 190px;
         text-transform: capitalize;
@@ -136,13 +194,6 @@
         top: 263px;
         text-transform: capitalize;
         opacity: 0.6;
-    }
-    span.implant-banner {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-family: 'Open Sans';
-        opacity: 1 !important;
     }
     a.podrobneebtn{
         right: 95px;
@@ -235,7 +286,8 @@ nav{
 /*Main*/
 /*Slider*/
 .banner{
-
+    max-width: 1620px;
+    margin: 0 auto;
 }
 
 
@@ -252,44 +304,68 @@ nav{
     margin-bottom: 70px;
     text-align: center;
 }
+.advantages div:after{
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 1px;
+    background: #dadada;
+    top: 24px;
+    right: 0;
+}
+.advantages div:last-child:after{
+    content: none;
+}
 .planet:before{
     background-image: url("../images/global-outlined-planetary-grid.png");
     background-repeat: no-repeat;
     position: absolute;
     content: "";
-    top: 22px;
-    left: 130px;
     width: 60px;
     height: 60px;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 .client:before{
-    background-image: url("../images/user.png");
+    background-image: url(../images/user.png);
     background-repeat: no-repeat;
     position: absolute;
     content: "";
-    top: 22px;
-    left: 130px;
-    width: 60px;
+    width: 51px;
     height: 60px;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 .clock:before{
     background-image: url("../images/clock.png");
     background-repeat: no-repeat;
     position: absolute;
     content: "";
-    top: 22px;
-    left: 130px;
     width: 60px;
     height: 60px;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 .landmark:before{
     background-image: url("../images/placeholder-outline.png");
     background-repeat: no-repeat;
     position: absolute;
     content: "";
-    top: 22px;
-    left: 130px;
-    width: 60px;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 47px;
     height: 60px;
 }
 
