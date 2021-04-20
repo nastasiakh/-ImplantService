@@ -19,6 +19,113 @@
 }
 
 @media (min-width: 992px) {
+    .banner:after {
+        margin-left: 20px;
+        width: 236px;
+        height: 445px;
+        position: absolute;
+        content: "";
+        top: 0;
+        z-index: 5;
+        right: 258px;
+        transform: skew(24deg);
+        background: linear-gradient(to right, #eff1f3 60px, #ffff 60px, #fafafb 77px, #6bdbd5 77px);
+        opacity: 0.7;
+    }
+    .banner:before{
+        margin-left: 20px;
+        width: 226px;
+        height: 445px;
+        top: 0;
+        position: absolute;
+        content: "";
+        right: 260px;
+        transform: skew(-25deg);
+        background:#a3bcca;
+        opacity: 0.6;
+        z-index: 10;
+    }
+    .text-banner>p {
+        position: absolute;
+        right: 95px;
+        top: 95px;
+        font-family: 'Open Sans';
+        font-size: 13px;
+        text-align: right;
+    }
+    .text-banner p:first-child{
+        opacity: 0.6;
+        font-size: 13px;
+        position: relative;
+    }
+    .text-banner p:first-child:after{
+        position: absolute;
+        content: "";
+        width: 17px;
+        height: 5px;
+        background: #6bdbd5;
+        bottom: -15px;
+        right: 0px;
+    }
+    .text-banner p>span.implant-banner {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        opacity: 1 !important;
+    }
+    p.responsibility {
+        top: 190px;
+        text-transform: capitalize;
+        font-size: 31px;
+        font-weight: bold;
+        opacity: 0.9;
+    }
+    p.reliability {
+        font-size: 29px;
+        top: 223px;
+        text-transform: capitalize;
+        opacity: 0.75;
+    }
+    p.quality {
+        font-size: 25px;
+        top: 263px;
+        text-transform: capitalize;
+        opacity: 0.6;
+    }
+    .text-banner>a.podrobneebtn{
+        right: 95px;
+        top: 327px;
+        position: absolute;
+        display: block;
+        padding: 17px 45px;
+        background-color: #3dc8bd;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    .news div.item div.text-left{
+        padding-top: 325px;
+        position: relative;
+    }
+    .news div.item div.text-left.first:before{
+        position: absolute;
+        background-image: url("../images/news2.png") ;
+        background-repeat: no-repeat;
+        width: 540px;
+        height: 250px;
+        content: "";
+        top: 39px;
+        left: 0;
+    }
+    .news div.item div.text-left.second:before{
+        position: absolute;
+        background-image: url("../images/news1.png");
+        background-repeat: no-repeat;
+        width: 540px;
+        height: 250px;
+        content: "";
+        top: 39px;
+        left: 0;
+    }
 
 }
 
@@ -107,6 +214,11 @@
         top: 13px;
         right: -7px;
     }
+
+    .banner{
+        max-width: 1620px;
+        margin: 0 auto;
+    }
     .banner{
         background: url("../images/csm_Surgical_instruments_traumatology_1920x495_01_aa87c29d65.png") left no-repeat, url("../images/Слой 1.png") repeat-x right 216px;
         height: 446px;
@@ -115,32 +227,7 @@
         margin: 0;
         z-index: 1;
     }
-    .banner:after {
-        margin-left: 20px;
-        width: 236px;
-        height: 445px;
-        position: absolute;
-        content: "";
-        top: 0;
-        z-index: 5;
-        right: 258px;
-        transform: skew(24deg);
-        background: linear-gradient(to right, #eff1f3 60px, #ffff 60px, #fafafb 77px, #6bdbd5 77px);
-        opacity: 0.7;
-    }
-    .banner:before{
-        margin-left: 20px;
-        width: 226px;
-        height: 445px;
-        top: 0;
-        position: absolute;
-        content: "";
-        right: 260px;
-        transform: skew(-24deg);
-        background:#a3bcca;
-        opacity: 0.6;
-        z-index: 10;
-    }
+
     .text-banner{
         position: absolute;
         content: "";
@@ -150,61 +237,36 @@
         right: 0;
         z-index: 15;
     }
-    .text-banner>p {
-        position: absolute;
-        right: 95px;
-        top: 95px;
-        font-family: 'Open Sans';
-        font-size: 13px;
-        text-align: right;
-    }
-    .text-banner p:first-child{
-        opacity: 0.6;
-        font-size: 13px;
-        position: relative;
-    }
-    .text-banner p:first-child:after{
+
+    .advantages div:after{
         position: absolute;
         content: "";
-        width: 17px;
-        height: 5px;
-        background: #6bdbd5;
+        height: 60px;
+        width: 1px;
+        background: #dadada;
+        bottom: 20px;
+        right: 0;
     }
-    .text-banner p>span.implant-banner {
-         text-align: center;
-         text-transform: uppercase;
-         font-size: 15px;
-         opacity: 1 !important;
-     }
-    p.responsibility {
-        top: 190px;
-        text-transform: capitalize;
-        font-size: 31px;
-        font-weight: bold;
-        opacity: 0.9;
+    .advantages div:last-child:after {
+        content: none;
     }
-    p.reliability {
-        font-size: 29px;
-        top: 223px;
-        text-transform: capitalize;
-        opacity: 0.75;
+
+    .recommends.owl-carousel .owl-nav button.owl-next{
+        font-size: 50px;
+        color: #898d908c;
+        overflow: visible;
     }
-    p.quality {
-        font-size: 25px;
-        top: 263px;
-        text-transform: capitalize;
-        opacity: 0.6;
+    .feedback.owl-carousel.owl-item:hover{
+        box-shadow: none;
     }
-    a.podrobneebtn{
-        right: 95px;
-        top: 327px;
-        position: absolute;
-        display: block;
-        padding: 17px 45px;
-        background-color: #3dc8bd;
-        text-transform: uppercase;
-        font-size: 13px;
+    a.item-podrobnee-btn:hover,
+    a.look-btn:hover,
+    a.podrobneebtn:hover{
+        border: 1px solid #3dc8bd;
+        background-color: #ffffff;
+        color: #3dc8bd;
     }
+
 }
 .azure{
     color: #3dc8bd;
@@ -214,6 +276,9 @@
 }
 .white{
     color: #ffffff;
+}
+.red{
+    color: #c60d46;
 }
 .corbel-font{
     font-family: Corbel;
@@ -226,6 +291,12 @@ a, a:visited, a:hover{
 }
 ul li{
     list-style: none;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+.text-left{
+    text-align: left;
 }
 
 /*Head*/
@@ -270,8 +341,8 @@ ul li{
     background-color: #15608b;
 }
 .navbar-toggler{
-    background-color: violet;
-    border: 1px solid violet;
+    background-color: white;
+    border: 1px solid #005f8b;
 }
 nav{
     position: absolute;
@@ -285,24 +356,17 @@ nav{
 
 /*Main*/
 /*Slider*/
-.banner{
-    max-width: 1620px;
-    margin: 0 auto;
-}
-
 
 .advantages{
     margin-bottom: 84px;
 }
-
 .advantages div{
     width: 60px;
     height: 60px;
     position: relative;
     text-align: center;
-    padding-top: 90px;
-    margin-bottom: 70px;
-    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 80px;
 }
 .advantages div:after{
     position: absolute;
@@ -310,7 +374,7 @@ nav{
     height: 60px;
     width: 1px;
     background: #dadada;
-    top: 24px;
+    bottom: 20px;
     right: 0;
 }
 .advantages div:last-child:after{
@@ -323,20 +387,20 @@ nav{
     content: "";
     width: 60px;
     height: 60px;
-    top: 24px;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
 }
 .client:before{
-    background-image: url(../images/user.png);
+    background-image: url("../images/user.png");
     background-repeat: no-repeat;
     position: absolute;
     content: "";
     width: 51px;
     height: 60px;
-    top: 24px;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -349,7 +413,7 @@ nav{
     content: "";
     width: 60px;
     height: 60px;
-    top: 24px;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -360,7 +424,7 @@ nav{
     background-repeat: no-repeat;
     position: absolute;
     content: "";
-    top: 24px;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -376,7 +440,6 @@ h2 {
     font-family: "Open Sans";
     font-size: 16px;
     color: #3dc8bd;
-    text-transform: uppercase;
     position: relative;
 }
 h2:after{
@@ -391,6 +454,7 @@ h2:after{
 .advantages p{
     font-family: "Malgun Gothic";
     font-weight: normal;
+    margin-bottom: 13px;
 }
 .advantages p+p{
     font-family: "Open Sans";
@@ -406,6 +470,8 @@ h2:after{
     font-size: 50px;
     color: #898d908c;
     font-weight: 300;
+    visibility: visible;
+    display: flex;
 }
 .owl-carousel .owl-nav button.owl-next{
     right:0;
@@ -420,16 +486,44 @@ h2:after{
     outline:none;
 }
 .text-center>h4{
-    text-transform: uppercase;
     font-size: 13px;
     color: #3b3e3b;
     font-weight: bolder;
 }
 .owl-carousel .owl-item{
-    /*margin: 15px 7.5px 0 7.5px;*/
+    margin: 33px 15px 31px 0;
+    padding-bottom: 95px;
 }
 .owl-carousel .owl-item:hover{
     box-shadow: 0 3px 9px rgba(152,152,152,0.35);
+}
+.item span.red,
+.item span.azure{
+    font-size: 13px;
+    font-family: "Open Sans";
+    display: inline-block;
+    padding: 4px 6px;
+    position: relative;
+    bottom: 11px;
+    width: 42px;
+    height: 27px;
+    text-align: center;
+    top: 26px;
+}
+.item>div>span.red{
+    border: 1px solid #c60d46;
+}
+.item>div>span.azure{
+    border: 1px solid #3dc8bd;
+}
+.item>.text-center> a.item-podrobnee-btn{
+    position: relative;
+    padding: 17px 45px;
+    background-color: #3dc8bd;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    top: 40px;
 }
 .margin-btm{
     margin-bottom: 15px;
@@ -438,4 +532,77 @@ h2:after{
     width: 50%;
     display: block;
     border-radius:50% ;
+    margin: 0 auto 10px;
+}
+.name{
+    font-size: 18px;
+    font-family:"Malgun Gothic";
+}
+.job{
+    font-size: 15px;
+    font-family:"Open Sans";
+    font-weight: 300;
+}
+.quote{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    color: rgba(75, 83, 88, 0.7);
+}
+.sertif{
+    font-family: "Open Sans";
+    font-size: 28px;
+}
+.sertif>span{
+    font-weight: 600;
+}
+.guarantee div{
+    padding-top: 325px;
+    position: relative;
+}
+.guarantee div:before{
+    position: absolute;
+    content: "";
+    background-image: url("../images/ortho_3.png");
+    width: 555px;
+    height: 250px;
+    top: 39px;
+}
+.guarantee div a.look-btn {
+    position: relative;
+    display: inline-block;
+    padding: 14px 32px;
+    background: #3dc8bd;
+    font-family: "Open Sans";
+    font-size: 13px;
+    text-align: center;
+}
+.news div.text-left{
+    margin-left: 10px;
+}
+.news div.text-left span{
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #444444;
+}
+.news div.text-left h4{
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 600;
+    color: #3dc8bd;
+    margin: 26px 0 30px;
+}
+.news div.text-left p{
+    font-family: "Open Sans";
+    font-size: 13.5px;
+    font-weight: 300;
+    color: #444444;
+}
+.news a.item-podrobnee-btn{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    background-color: #3dc8bd;
+    padding: 14px 28px 11px;
+    margin-left: 10px;
 }
