@@ -258,15 +258,26 @@
     }
     .feedback.owl-carousel.owl-item:hover{
         box-shadow: none;
+
     }
     a.item-podrobnee-btn:hover,
     a.look-btn:hover,
     a.podrobneebtn:hover{
+        box-sizing: border-box;
         border: 1px solid #3dc8bd;
         background-color: #ffffff;
         color: #3dc8bd;
     }
-
+    .news {
+        position: relative;
+    }
+    .news .owl-dots {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+    }
 }
 .azure{
     color: #3dc8bd;
@@ -524,6 +535,7 @@ h2:after{
     font-size: 13px;
     text-align: center;
     top: 40px;
+    overflow: hidden;
 }
 .margin-btm{
     margin-bottom: 15px;
@@ -606,3 +618,15 @@ h2:after{
     padding: 14px 28px 11px;
     margin-left: 10px;
 }
+
+/*Footer*/
+
+footer a{
+    color: rgba(68, 68, 68, 0.75);
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+footer ul{
+    padding-left: 0;
+}
+
