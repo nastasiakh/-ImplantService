@@ -40,8 +40,14 @@ ul li{
 .text-left{
     text-align: left;
 }
+.custom-width-container {
+    max-width: 1620px;
+}
 section{
     margin-bottom: 30px;
+}
+section.header-menu {
+    margin: 0;
 }
 /*Head*/
 .head{
@@ -205,6 +211,8 @@ h2:after{
 }
 .owl-carousel {
     margin-top: 30px;
+}
+.owl-carousel .owl-stage {
     padding-bottom: 50px;
 }
 .owl-carousel .owl-nav button.owl-next,
@@ -221,6 +229,9 @@ h2:after{
 }
 .owl-carousel .owl-nav button.owl-prev{
     left:0;
+}
+.owl-item {
+    padding: 5px;
 }
 .owl-carousel .owl-nav button.owl-next:focus,
 .owl-carousel .owl-nav button.owl-prev:focus{
@@ -252,12 +263,13 @@ h2:after{
     font-family: "Open Sans";
     display: inline-block;
     padding: 4px 6px;
-    position: relative;
-    bottom: 11px;
+    position: absolute;
+    bottom: 72px;
     width: 42px;
     height: 27px;
     text-align: center;
-    top: 26px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .item>div>span.red{
     border: 1px solid #c60d46;
@@ -696,12 +708,13 @@ footer .made-by a+a {
         margin: 0 auto;
     }
     .banner{
-        background: url("../images/csm_Surgical_instruments_traumatology_1920x495_01_aa87c29d65.png") left no-repeat, url("../images/Слой 1.png") repeat-x right 216px;
+        background: url("../images/csm_Surgical_instruments_traumatology_1920x495_01_aa87c29d65.png") left no-repeat;
         height: 446px;
-        background-position-x: 50px;
         position: relative;
         margin: 0;
         z-index: 1;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     .text-banner{
@@ -735,7 +748,11 @@ footer .made-by a+a {
     .item>.text-center> a.item-podrobnee-btn{
          display: none
      }
-    .owl-carousel .owl-item:hover{
+    .owl-carousel .owl-item:hover .item span.red,
+    .owl-carousel .owl-item:hover .item span.azure{
+        display: none;
+    }
+    .owl-carousel .owl-item:hover .item {
         box-shadow: 0 3px 9px rgba(152,152,152,0.35);
     }
     .owl-carousel .owl-item:hover .item>.text-center> a.item-podrobnee-btn{
