@@ -40,7 +40,9 @@ ul li{
 .text-left{
     text-align: left;
 }
-
+section{
+    margin-bottom: 30px;
+}
 /*Head*/
 .head{
     margin: 52px 0 37px 0;
@@ -74,8 +76,8 @@ ul li{
     left: 61px;
     top: 31px;
 }
-.soc-media{
-    margin-top: auto;
+soc-media {
+    margin: 10px 0;
     width: 130px;
     padding-left: 0;
 }
@@ -84,6 +86,12 @@ ul li{
     height: 25px;
     border-radius: 50%;
     background-color: #15608b;
+}
+a.phone.blue {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 140px;
 }
 .navbar-toggler{
     background-color: white;
@@ -112,18 +120,6 @@ nav{
     text-align: center;
     padding-top: 150px;
     margin-bottom: 80px;
-}
-.advantages div:after{
-    position: absolute;
-    content: "";
-    height: 60px;
-    width: 1px;
-    background: #dadada;
-    bottom: 20px;
-    right: 0;
-}
-.advantages div:last-child:after{
-    content: none;
 }
 .planet:before{
     background-image: url("../images/global-outlined-planetary-grid.png");
@@ -207,16 +203,18 @@ h2:after{
     color: #6d7276;
     font-weight: lighter;
 }
+.owl-carousel {
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev{
     position: absolute;
     content: "";
-    top: 125px;
-    font-size: 50px;
+    top: 69px;
+    font-size: 94px;
     color: #898d908c;
     font-weight: 300;
-    visibility: visible;
-    display: flex;
 }
 .owl-carousel .owl-nav button.owl-next{
     right:0;
@@ -230,17 +228,23 @@ h2:after{
     border: none;
     outline:none;
 }
-.text-center>h4{
+.item-descr.text-center>h4{
     font-size: 13px;
     color: #3b3e3b;
     font-weight: bolder;
+    min-height: 30px;
 }
-.owl-carousel .owl-item{
-    margin: 33px 15px 31px 0;
-    padding-bottom: 95px;
+.item-descr.text-center>p{
+    min-height: 48px;
 }
-.owl-carousel .owl-item:hover{
+.item-descr.text-center {
+    padding-bottom: 104px;
+}
+.owl-carousel .owl-item:focus{
     box-shadow: 0 3px 9px rgba(152,152,152,0.35);
+}
+.owl-carousel .owl-item:hover .item>.text-center> a.item-podrobnee-btn{
+    display: inline-block;
 }
 .item span.red,
 .item span.azure{
@@ -262,15 +266,15 @@ h2:after{
     border: 1px solid #3dc8bd;
 }
 .item>.text-center> a.item-podrobnee-btn{
-    position: relative;
+    position: absolute;
     padding: 17px 45px;
     background-color: #3dc8bd;
     text-transform: uppercase;
     font-size: 13px;
-    text-align: center;
-    top: 40px;
+    bottom: 30px;
     overflow: hidden;
     border: 1px solid #3dc8bd;
+    right: 52px;
 }
 .margin-btm{
     margin-bottom: 15px;
@@ -304,16 +308,8 @@ h2:after{
     font-weight: 600;
 }
 .guarantee div{
-    padding-top: 325px;
+    padding-top: 17px;
     position: relative;
-}
-.guarantee div:before{
-    position: absolute;
-    content: "";
-    background-image: url("../images/ortho_3.png");
-    width: 555px;
-    height: 250px;
-    top: 39px;
 }
 .guarantee div a.look-btn {
     position: relative;
@@ -387,8 +383,8 @@ footer a{
     font-family: "Open Sans";
 }
 a.logo-footer {
-    display: inline-block;
-    margin-bottom: 34px;
+    display: block;
+    margin-bottom: 20px;
 }
 footer ul{
     padding-left: 0;
@@ -407,11 +403,18 @@ footer h6{
     margin-bottom: 31px;
 }
 footer .made-by img {
-    display: block;
     margin: 0 auto;
 }
 footer .made-by{
     text-align: center;
+}
+footer .made-by a{
+    display: inline-block;
+    padding: 1px 9px;
+    cursor: pointer;
+}
+footer .made-by a+a {
+    display: block;
 }
 
 @media (min-width: 576px) {
@@ -423,6 +426,11 @@ footer .made-by{
 }
 
 @media (min-width: 992px) {
+    .soc-media{
+        margin-top: auto;
+        width: 130px;
+        padding-left: 0;
+    }
     .banner:after {
         margin-left: 20px;
         width: 236px;
@@ -452,33 +460,36 @@ footer .made-by{
     .text-banner>p {
         position: absolute;
         right: 95px;
-        top: 95px;
+        top: 59px;
         font-family: 'Open Sans';
         font-size: 13px;
         text-align: right;
     }
-    .text-banner p:first-child{
+    .text-banner p:first-child +p{
         opacity: 0.6;
         font-size: 13px;
         position: relative;
     }
-    .text-banner p:first-child:after{
+    .text-banner p:first-child+p:after{
         position: absolute;
         content: "";
-        width: 17px;
+        width: 40px;
         height: 5px;
         background: #6bdbd5;
-        bottom: -15px;
+        bottom: -21px;
         right: 0px;
     }
-    .text-banner p>span.implant-banner {
-        text-align: center;
+    .text-banner p.implant-banner.white {
         text-transform: uppercase;
+        font-family: "Open Sans";
+        z-index: 20;
+        position: relative;
+        top: 67px;
+        opacity: 1;
         font-size: 15px;
-        opacity: 1 !important;
     }
     p.responsibility {
-        top: 190px;
+        top: 163px;
         text-transform: capitalize;
         font-size: 31px;
         font-weight: bold;
@@ -486,25 +497,69 @@ footer .made-by{
     }
     p.reliability {
         font-size: 29px;
-        top: 223px;
+        top: 203px;
         text-transform: capitalize;
         opacity: 0.75;
     }
     p.quality {
         font-size: 25px;
-        top: 263px;
+        top: 243px;
         text-transform: capitalize;
         opacity: 0.6;
     }
     .text-banner>a.podrobneebtn{
         right: 95px;
-        top: 327px;
+        top: 299px;
         position: absolute;
         display: block;
-        padding: 17px 45px;
+        padding: 17px 50px;
         background-color: #3dc8bd;
         text-transform: uppercase;
         font-size: 13px;
+    }
+    .text-banner ul li{
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: transparent;
+        border-radius: 50%;
+        border: 1px solid white;
+        bottom: 33px;
+        right: 145px;
+    }
+    .text-banner ul li+li{
+        right: 133px;
+    }
+    .text-banner ul li+li+li{
+        right: 121px;
+    }
+    .text-banner ul>li.banner-active{
+        background: white;
+    }
+    .advantages div:after{
+        position: absolute;
+        content: "";
+        height: 60px;
+        width: 1px;
+        background: #dadada;
+        bottom: 20px;
+        right: 0;
+    }
+    .advantages div:last-child:after{
+        content: none;
+    }
+    .guarantee div{
+        padding-top: 325px;
+        position: relative;
+    }
+    .guarantee div:before{
+        position: absolute;
+        content: "";
+        background-image: url("../images/ortho_3.png");
+        width: 555px;
+        height: 250px;
+        top: 39px;
     }
     .news div.item div.text-left{
         padding-top: 325px;
@@ -530,7 +585,24 @@ footer .made-by{
         top: 39px;
         left: 0;
     }
-
+    button.owl-dot {
+        max-width: 8px;
+        height: 8px;
+        margin-right: 4px;
+        border-radius: 50%;
+        width: 8px;
+        min-width: 8px;
+        padding: 4px 4px;
+        display: inline-block;
+        background: transparent;
+        border: 1px solid #3dc8bd;
+        content: "";
+        margin-bottom: 0;
+    }
+    button.owl-dot.active{
+        background: #3dc8bd;
+        border: 1px solid transparent;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -604,7 +676,7 @@ footer .made-by{
     a.nav-link.callback.white {
         display: block;
         background-color: #c60d46;
-        padding: 12px 33px;
+        padding: 12px 33px 15px;
         position: absolute;
         top: 4px;
     }
@@ -660,10 +732,19 @@ footer .made-by{
         color: #898d908c;
         overflow: visible;
     }
+    .item>.text-center> a.item-podrobnee-btn{
+         display: none
+     }
+    .owl-carousel .owl-item:hover{
+        box-shadow: 0 3px 9px rgba(152,152,152,0.35);
+    }
+    .owl-carousel .owl-item:hover .item>.text-center> a.item-podrobnee-btn{
+        display: inline-block;
+    }
     .feedback.owl-carousel.owl-item:hover{
         box-shadow: none;
-
     }
+
     a.item-podrobnee-btn:hover,
     .guarantee div a.look-btn:hover,
     a.podrobneebtn:hover,
