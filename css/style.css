@@ -188,6 +188,7 @@ h2 {
     font-size: 16px;
     color: #3dc8bd;
     position: relative;
+    padding-bottom: 14px;
 }
 h2:after{
     position: absolute;
@@ -195,7 +196,7 @@ h2:after{
     width: 100%;
     height: 1px;
     background-color: #3dc8bd;
-    top: 26px;
+    top: 36px;
     left: 0;
 }
 .advantages p{
@@ -286,7 +287,8 @@ h2:after{
     bottom: 30px;
     overflow: hidden;
     border: 1px solid #3dc8bd;
-    right: 52px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .margin-btm{
     margin-bottom: 15px;
@@ -438,6 +440,90 @@ footer .made-by a+a {
 }
 
 @media (min-width: 992px) {
+    .navbar{
+        padding: 0 21px;
+    }
+    .dropdown-menu{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    ul.full-menu{
+        width: 100%;
+    }
+    ul.full-menu li.nav-item:first-child{
+        background-color: #3dc8bd;
+        width: 24%;
+    }
+    a.nav-link.dropdown-toggle.blue:before {
+        position: absolute;
+        content: "";
+        width: 19px;
+        height: 16px;
+        background: linear-gradient( #ffffff 1px, #ffffff,
+        transparent, transparent 6px,
+        #ffffff, #ffffff 9px,
+        transparent, transparent 12px,
+        #ffffff, #ffffff 16px);
+        top: 20px;
+        left: 15px;
+    }
+    a.nav-link.dropdown-toggle.blue:after {
+        content: none;
+    }
+    li.nav-item.dropdown>a {
+        display: block;
+        font-size: 13px;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+    }
+    .dropdown .dropdown-menu {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .dropdown .dropdown-menu.show {
+        max-height: 300px;
+        opacity: 1;
+    }
+    li.nav-item>a{
+        padding: 17px 60px 17px 60px;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    ul.full-menu li.nav-item {
+        width: 15%;
+        text-align: center;
+    }
+    ul.full-menu li.nav-item:last-child{
+        width: 17.5%;
+        position: relative;
+    }
+    a.nav-link.callback.white {
+        display: block;
+        background-color: #c60d46;
+        padding: 12px 17px 15px;
+        position: absolute;
+        top: 4px;
+    }
+    .header-menu{
+        position: relative;
+        border-top: rgba(226, 230, 233, 0.5) 1px solid;
+        border-bottom: rgba(226, 230, 233, 0.5) 1px solid;
+    }
+    a.phone.blue {
+        position: absolute;
+        top: -48px;
+        right: -7px;
+    }
     .soc-media{
         margin-top: auto;
         width: 130px;
@@ -469,6 +555,25 @@ footer .made-by a+a {
         opacity: 0.6;
         z-index: 10;
     }
+    .banner{
+        background: url("../images/csm_Surgical_instruments_traumatology_1920x495_01_aa87c29d65.png") left no-repeat;
+        height: 446px;
+        position: relative;
+        margin: 0;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .text-banner{
+        position: absolute;
+        content: "";
+        background: url("../images/triangles-png-46460.png") right no-repeat;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        z-index: 15;
+    }
+
     .text-banner>p {
         position: absolute;
         right: 95px;
@@ -569,7 +674,7 @@ footer .made-by a+a {
         position: absolute;
         content: "";
         background-image: url("../images/ortho_3.png");
-        width: 555px;
+        width: 100%;
         height: 250px;
         top: 39px;
     }
@@ -581,23 +686,23 @@ footer .made-by a+a {
         position: absolute;
         background-image: url("../images/news2.png") ;
         background-repeat: no-repeat;
-        width: 540px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
         content: "";
         top: 39px;
         left: 0;
     }
-    .news div.item div.text-left.second:before{
+    .news .item div.text-left.second:before{
         position: absolute;
         background-image: url("../images/news1.png");
         background-repeat: no-repeat;
-        width: 540px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
         content: "";
         top: 39px;
         left: 0;
     }
-    button.owl-dot {
+    .news.owl-carousel button.owl-dot{
         max-width: 8px;
         height: 8px;
         margin-right: 4px;
@@ -611,13 +716,84 @@ footer .made-by a+a {
         content: "";
         margin-bottom: 0;
     }
-    button.owl-dot.active{
+    .news.owl-carousel button.owl-dot.active {
         background: #3dc8bd;
-        border: 1px solid transparent;
     }
+    .news.owl-carousel button.owl-dot:focus{
+        outline: none;
+    }
+    .news.owl-carousel .owl-dots {
+        position: absolute;
+        top: -70px;
+        right: 12px;
+    }
+    .feedback.owl-carousel button.owl-dot{
+        max-width: 8px;
+        height: 8px;
+        margin-right: 4px;
+        border-radius: 50%;
+        width: 8px;
+        min-width: 8px;
+        padding: 4px 4px;
+        display: inline-block;
+        background: transparent;
+        border: 1px solid #3dc8bd;
+        content: "";
+        margin-bottom: 0;
+    }
+    .feedback.owl-carousel button.owl-dot.active {
+        background: #3dc8bd;
+    }
+    .feedback.owl-carousel button.owl-dot:focus{
+        outline: none;
+    }
+    .feedback.owl-carousel .owl-dots {
+        position: absolute;
+        top: -70px;
+        right: 12px;
+    }
+    .item>.text-center> a.item-podrobnee-btn{
+        display: none
+    }
+    .owl-carousel .owl-item:hover .item span.red,
+    .owl-carousel .owl-item:hover .item span.azure{
+        display: none;
+    }
+    .recomends.owl-carousel .owl-item:hover .item,
+    .new-item.owl-carousel .owl-item:hover .item {
+        box-shadow: 0 3px 9px rgba(152,152,152,0.35);
+    }
+    .owl-carousel .owl-item:hover .item>.text-center> a.item-podrobnee-btn{
+        display: inline-block;
+    }
+    .feedback.owl-carousel.owl-item:hover{
+        box-shadow: none;
+    }
+    a.item-podrobnee-btn:hover,
+    .guarantee div a.look-btn:hover,
+    a.podrobneebtn:hover,
+    .item>.text-center> a.item-podrobnee-btn:hover{
+        box-sizing: border-box;
+        border: 1px solid #3dc8bd;
+        background-color: #ffffff;
+        color: #3dc8bd;
+    }
+
 }
 
 @media (min-width: 1200px) {
+    li.nav-item.dropdown>a {
+        font-size: 14px;
+    }
+    li.nav-item>a {
+        font-size: 12px;
+    }
+    a.nav-link.dropdown-toggle.blue:before {
+        left: 30px;
+    }
+    a.nav-link.callback.white {
+        padding: 12px 33px 15px;
+    }
     .navbar{
         padding: 0 21px;
     }
@@ -649,13 +825,6 @@ footer .made-by a+a {
     a.nav-link.dropdown-toggle.blue:after {
         content: none;
     }
-    li.nav-item.dropdown>a {
-        display: block;
-        font-size: 14px;
-        color: white;
-        text-align: center;
-        font-weight: 600;
-    }
     .dropdown .dropdown-menu {
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -668,29 +837,8 @@ footer .made-by a+a {
         overflow: hidden;
         opacity: 0;
     }
-    .dropdown .dropdown-menu.show {
-        max-height: 300px;
-        opacity: 1;
-    }
-    li.nav-item>a{
-        padding: 17px 60px 17px 60px;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
-    ul.full-menu li.nav-item {
-        width: 15%;
-        text-align: center;
-    }
-    ul.full-menu li.nav-item:last-child{
-        width: 17.5%;
-        position: relative;
-    }
     a.nav-link.callback.white {
-        display: block;
-        background-color: #c60d46;
         padding: 12px 33px 15px;
-        position: absolute;
-        top: 4px;
     }
     .header-menu{
         position: relative;
@@ -698,33 +846,11 @@ footer .made-by a+a {
         border-bottom: rgba(226, 230, 233, 0.5) 1px solid;
     }
     a.phone.blue {
-        position: absolute;
         top: 13px;
-        right: -7px;
     }
-
     .banner{
         max-width: 1620px;
         margin: 0 auto;
-    }
-    .banner{
-        background: url("../images/csm_Surgical_instruments_traumatology_1920x495_01_aa87c29d65.png") left no-repeat;
-        height: 446px;
-        position: relative;
-        margin: 0;
-        z-index: 1;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-    .text-banner{
-        position: absolute;
-        content: "";
-        background: url("../images/triangles-png-46460.png") right no-repeat;
-        width: 100%;
-        height: 100%;
-        right: 0;
-        z-index: 15;
     }
 
     .advantages div:after{
@@ -740,49 +866,5 @@ footer .made-by a+a {
         content: none;
     }
 
-    .recommends.owl-carousel .owl-nav button.owl-next{
-        font-size: 50px;
-        color: #898d908c;
-        overflow: visible;
-    }
-    .item>.text-center> a.item-podrobnee-btn{
-         display: none
-     }
-    .owl-carousel .owl-item:hover .item span.red,
-    .owl-carousel .owl-item:hover .item span.azure{
-        display: none;
-    }
-    .owl-carousel .owl-item:hover .item {
-        box-shadow: 0 3px 9px rgba(152,152,152,0.35);
-    }
-    .owl-carousel .owl-item:hover .item>.text-center> a.item-podrobnee-btn{
-        display: inline-block;
-    }
-    .feedback.owl-carousel.owl-item:hover{
-        box-shadow: none;
-    }
 
-    a.item-podrobnee-btn:hover,
-    .guarantee div a.look-btn:hover,
-    a.podrobneebtn:hover,
-    .item>.text-center> a.item-podrobnee-btn:hover{
-        box-sizing: border-box;
-        border: 1px solid #3dc8bd;
-        background-color: #ffffff;
-        color: #3dc8bd;
-    }
-    .news {
-        position: relative;
-    }
-    .news .owl-dots {
-        display: inline-block;
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-    }
-    .news .owl-carousel .owl-item {
-        margin: 0px 15px 31px 0;
-        padding-bottom: 95px;
-    }
 }
