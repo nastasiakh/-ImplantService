@@ -97,29 +97,29 @@ ul.soc-media li{
     height: 25px;
     border-radius: 50%;
     background: url("../images/css_sprites.png");
-    background-position: -10px -10px;
+    background-position: 145px -3px;
     margin-right: 15px;
 }
 ul.soc-media li:hover{
-    background-position: -96px -7px;
+    background-position: 145px -64px;
 }
 ul.soc-media li+li{
-    background-position: -97px -46px;
+    background-position: -212px -3px;
 }
 ul.soc-media li+li:hover{
-    background-position: -6px -95px
+    background-position: -212px -64px;
 }
 ul.soc-media li+li+li{
-    background-position: -54px -10px;
+    background-position: -90px -4px;
 }
 ul.soc-media li+li+li:hover{
-    bbackground-position: -96px -7px;
+    background-position: -90px -64px;
 }
 ul.soc-media li+li+li+li{
-    background-position: -54px -10px;
+    background-position: -90px -4px;
 }
 ul.soc-media li+li+li+li:hover{
-    background-position: -96px -7px;
+    background-position: -90px -64px;
 }
 ul.soc-media>li>a {
     padding: 1px 9px;
@@ -157,16 +157,17 @@ svg.bi.bi-list {
     top: 20px;
     color: #005f8b;
 }
-.collapse.show {
-    display: block;
-    position: absolute;
-    top: 47px;
-    left: 16px;
-    border: 1px solid rgba(0,0,0,.15);
-    background: white;
-    z-index: 10;
-    border-radius: 2%;
-    width: 89%;
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 47px;
+        left: 16px;
+        border: 1px solid rgba(0, 0, 0, .15);
+        background: white;
+        z-index: 10;
+        border-radius: 2%;
+        width: 89%;
+    }
 }
 .navbar-nav {
     padding-left: 17px;
@@ -335,6 +336,20 @@ p.quality {
     background-color: #3dc8bd;
     text-transform: uppercase;
     font-size: 13px;
+}
+.swiper-pagination.swiper-pagination-bullets {
+    position: absolute;
+    right: 90px;
+    bottom: 37px;
+    width: 100px;
+    left: unset;
+}
+.swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid white;
+}
+.swiper-pagination-bullet-active {
+    background: white;
 }
 h2 {
     font-family: "Open Sans";
@@ -585,28 +600,28 @@ footer h6{
     height: 25px;
     border-radius: 50%;
     background: url("../images/css_sprites.png");
-    background-position: -10px -10px;
+    background-position: -5px -3px;
 }
 .soc-media-footer ul.justify-content-around li:before:hover{
-    background-position: -96px -7px;
+    background-position: -5px -64px;
 }
 .soc-media-footer ul.justify-content-around li+li:before{
-    background-position: -97px -46px;
+    background-position: -62px -3px;
 }
 .soc-media-footer ul.justify-content-around li+li:before:hover{
-    background-position: -6px -95px
+    background-position: -62px -64px;
 }
 .soc-media-footer ul.justify-content-around li+li+li:before{
-    background-position: -54px -10px;
+    background-position: -5px -34px;
 }
 .soc-media-footer ul.justify-content-around  li+li+li:before:hover{
-    background-position: -96px -7px;
+    background-position: -5px -94px;
 }
 .soc-media-footer ul.justify-content-around li+li+li+li:before{
-    background-position: -54px -10px;
+    background-position: -118px -3px;
 }
 .soc-media-footer ul.justify-content-around li+li+li+li:before:hover{
-    background-position: -96px -7px;
+    background-position: -118px -64px;
 }
 .soc-media-footer ul li>a {
     padding-left: 30px;
@@ -629,6 +644,7 @@ footer .made-by a+a {
 @media (min-width: 576px) {
     a.phone.blue {
         top: 113px;
+        right: 36px;
     }
     .banner:after {
         margin-left: 20px;
@@ -667,11 +683,10 @@ footer .made-by a+a {
     }
 }
 
-@media (min-width: 768px) {
-    .collapse.show {
+@media (min-width: 768px) and (max-width:991px) {
+    .menu {
         width: 95.5%;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -1000,8 +1015,8 @@ footer .made-by a+a {
         border-bottom: rgba(226, 230, 233, 0.5) 1px solid;
     }
     a.phone.blue {
-        top: 13px;
-        right: 52px;
+        top: -53px;
+        right: 17px;
     }
     .banner{
         max-width: 1620px;
@@ -1020,6 +1035,10 @@ footer .made-by a+a {
     .advantages div:last-child:after {
         content: none;
     }
-
-
+}
+@media (min-width: 1400px){
+    a.phone.blue {
+        top: 13px;
+        right: 17px;
+    }
 }
