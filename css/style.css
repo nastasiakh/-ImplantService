@@ -51,7 +51,7 @@ section.header-menu {
 }
 /*Head*/
 .head{
-    margin: 52px 0 37px 0;
+    margin: 52px 0 0 0;
     position: relative;
 }
 .head .dropdown-menu{
@@ -64,6 +64,7 @@ section.header-menu {
 .logo{
     padding-bottom:14px;
     position: relative;
+    margin-bottom: 10px;
 }
 .logo .blue{
     font-size: 43px;
@@ -85,13 +86,43 @@ section.header-menu {
 soc-media {
     margin: 10px 0;
     width: 130px;
-    padding-left: 0;
+    padding-left: 5px;
 }
-.soc-media li{
+ul.soc-media.order-3.row.justify-content-between {
+    padding-left: 0;
+    margin: 5px;
+}
+ul.soc-media li{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #15608b;
+    background: url("../images/css_sprites.png");
+    background-position: -10px -10px;
+    margin-right: 15px;
+}
+ul.soc-media li:hover{
+    background-position: -96px -7px;
+}
+ul.soc-media li+li{
+    background-position: -97px -46px;
+}
+ul.soc-media li+li:hover{
+    background-position: -6px -95px
+}
+ul.soc-media li+li+li{
+    background-position: -54px -10px;
+}
+ul.soc-media li+li+li:hover{
+    bbackground-position: -96px -7px;
+}
+ul.soc-media li+li+li+li{
+    background-position: -54px -10px;
+}
+ul.soc-media li+li+li+li:hover{
+    background-position: -96px -7px;
+}
+ul.soc-media>li>a {
+    padding: 1px 9px;
 }
 a.phone.blue {
     display: inline-block;
@@ -101,21 +132,68 @@ a.phone.blue {
 }
 .navbar-toggler{
     background-color: white;
-    border: 1px solid #005f8b;
+    border: 1px solid rgba(0,0,0,.15);
+    width: 100%;
+    color: #005f8b;
+}
+button.navbar-toggler, button.navbar-toggler:focus {
+    outline: none;
 }
 nav{
     position: absolute;
     content: "";
     color: #005f8b;
 }
-
-/*Nav*/
-
-
-
-/*Main*/
-/*Slider*/
-
+svg.bi.bi-list {
+    position: absolute;
+    top: 20px;
+    left: 26px;
+}
+.navbar-toggler span {
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    left: 55px;
+    top: 20px;
+    color: #005f8b;
+}
+.collapse.show {
+    display: block;
+    position: absolute;
+    top: 47px;
+    left: 16px;
+    border: 1px solid rgba(0,0,0,.15);
+    background: white;
+    z-index: 10;
+    border-radius: 2%;
+    width: 89%;
+}
+.navbar-nav {
+    padding-left: 17px;
+}
+.dropdown-menu {
+    border: none;
+}
+.dropdown-item{
+    padding: 1px 15px;
+}
+ul.navbar-nav.full-menu li{
+    position: relative;
+}
+ul.navbar-nav.full-menu li:after {
+    content: "";
+    position: absolute;
+    width: 89%;
+    height: 1px;
+    background: #00000014;
+    top: 40px;
+    z-index: 1000;
+}
+a.nav-link.callback:hover {
+    background: white;
+    color: #005f8b;
+    border: 1px solid #c60d46;
+}
 .advantages{
     margin-bottom: 84px;
 }
@@ -182,6 +260,81 @@ nav{
 
 .slider{
     margin-bottom: 15px;
+}
+.swiper-container{
+    height: 447px;
+}
+
+.text-banner{
+    position: absolute;
+    content: "";
+    background: url("../images/triangles-png-46460.png") right no-repeat;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: -2px;
+    z-index: 15;
+}
+.text-banner>p {
+    position: absolute;
+    right: 10px;
+    top: 59px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    text-align: right;
+}
+.text-banner p:first-child +p{
+    opacity: 0.6;
+    font-size: 13px;
+    position: relative;
+}
+.text-banner p:first-child+p:after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 5px;
+    background: #6bdbd5;
+    bottom: -21px;
+    right: 0;
+}
+.text-banner p.implant-banner.white {
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    z-index: 20;
+    position: relative;
+    top: 67px;
+    opacity: 1;
+    font-size: 15px;
+}
+p.responsibility {
+    top: 163px;
+    text-transform: capitalize;
+    font-size: 31px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+p.reliability {
+    font-size: 29px;
+    top: 203px;
+    text-transform: capitalize;
+    opacity: 0.75;
+}
+p.quality {
+    font-size: 25px;
+    top: 243px;
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+.text-banner>a.podrobneebtn{
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 299px;
+    position: absolute;
+    display: block;
+    padding: 17px 50px;
+    background-color: #3dc8bd;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 h2 {
     font-family: "Open Sans";
@@ -265,7 +418,7 @@ h2:after{
     display: inline-block;
     padding: 4px 6px;
     position: absolute;
-    bottom: 72px;
+    bottom: 101px;
     width: 42px;
     height: 27px;
     text-align: center;
@@ -374,6 +527,9 @@ h2:after{
 footer{
     background-image: linear-gradient(to bottom, rgba(223, 227, 230, 0.4), #ffffff);
 }
+section.container.row.justify-content-between.align-baseline div {
+    margin-bottom: 13px;
+}
 footer a.logo-footer>span.blue{
     font-size: 34.5px;
     font-weight: 600;
@@ -396,9 +552,12 @@ footer a{
     font-size: 14px;
     font-family: "Open Sans";
 }
+.logo-copyright{
+    margin: 0 auto;
+}
 a.logo-footer {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 footer ul{
     padding-left: 0;
@@ -416,6 +575,42 @@ footer h6{
     color: #444444;
     margin-bottom: 31px;
 }
+.soc-media-footer ul.justify-content-around li{
+    position: relative;
+}
+.soc-media-footer ul.justify-content-around li:before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("../images/css_sprites.png");
+    background-position: -10px -10px;
+}
+.soc-media-footer ul.justify-content-around li:before:hover{
+    background-position: -96px -7px;
+}
+.soc-media-footer ul.justify-content-around li+li:before{
+    background-position: -97px -46px;
+}
+.soc-media-footer ul.justify-content-around li+li:before:hover{
+    background-position: -6px -95px
+}
+.soc-media-footer ul.justify-content-around li+li+li:before{
+    background-position: -54px -10px;
+}
+.soc-media-footer ul.justify-content-around  li+li+li:before:hover{
+    background-position: -96px -7px;
+}
+.soc-media-footer ul.justify-content-around li+li+li+li:before{
+    background-position: -54px -10px;
+}
+.soc-media-footer ul.justify-content-around li+li+li+li:before:hover{
+    background-position: -96px -7px;
+}
+.soc-media-footer ul li>a {
+    padding-left: 30px;
+}
 footer .made-by img {
     margin: 0 auto;
 }
@@ -432,14 +627,58 @@ footer .made-by a+a {
 }
 
 @media (min-width: 576px) {
-
+    a.phone.blue {
+        top: 113px;
+    }
+    .banner:after {
+        margin-left: 20px;
+        width: 236px;
+        height: 445px;
+        position: absolute;
+        content: "";
+        top: 0;
+        z-index: 5;
+        right: 258px;
+        transform: skew(24deg);
+        background: linear-gradient(to right, #eff1f3 60px, #ffff 60px, #fafafb 77px, #6bdbd5 77px);
+        opacity: 0.7;
+    }
+    .banner:before{
+        margin-left: 20px;
+        width: 226px;
+        height: 445px;
+        top: 0;
+        position: absolute;
+        content: "";
+        right: 260px;
+        transform: skew(-25deg);
+        background:#a3bcca;
+        opacity: 0.6;
+        z-index: 10;
+    }
+    .text-banner>p {
+        position: absolute;
+        right: 95px;
+    }
+    .text-banner>a.podrobneebtn {
+        right: 95px;
+        left: unset;
+        transform: none;
+    }
 }
 
 @media (min-width: 768px) {
+    .collapse.show {
+        width: 95.5%;
+    }
 
 }
 
 @media (min-width: 992px) {
+    .head {
+        margin: 52px 0 37px 0;
+        position: relative;
+    }
     .navbar{
         padding: 0 21px;
     }
@@ -447,10 +686,9 @@ footer .made-by a+a {
         width: 100%;
         margin: 0;
         border-radius: 0;
+        border: 1px solid rgba(0, 0, 0, .15);
     }
-    ul.full-menu{
-        width: 100%;
-    }
+
     ul.full-menu li.nav-item:first-child{
         background-color: #3dc8bd;
         width: 24%;
@@ -477,6 +715,10 @@ footer .made-by a+a {
         color: white;
         text-align: center;
         font-weight: 600;
+    }
+    .navbar-nav {
+        width:100%;
+        padding-left: 0px;
     }
     .dropdown .dropdown-menu {
         -webkit-transition: all 0.3s;
@@ -507,12 +749,16 @@ footer .made-by a+a {
         width: 17.5%;
         position: relative;
     }
-    a.nav-link.callback.white {
+    a.nav-link.callback {
+        color: white ;
         display: block;
         background-color: #c60d46;
         padding: 12px 17px 15px;
         position: absolute;
         top: 4px;
+    }
+    ul.navbar-nav.full-menu li:after{
+        display: none;
     }
     .header-menu{
         position: relative;
@@ -522,38 +768,13 @@ footer .made-by a+a {
     a.phone.blue {
         position: absolute;
         top: -48px;
-        right: -7px;
+        right: 20px;
     }
     .soc-media{
-        margin-top: auto;
         width: 130px;
-        padding-left: 0;
     }
-    .banner:after {
-        margin-left: 20px;
-        width: 236px;
-        height: 445px;
-        position: absolute;
-        content: "";
-        top: 0;
-        z-index: 5;
-        right: 258px;
-        transform: skew(24deg);
-        background: linear-gradient(to right, #eff1f3 60px, #ffff 60px, #fafafb 77px, #6bdbd5 77px);
-        opacity: 0.7;
-    }
-    .banner:before{
-        margin-left: 20px;
-        width: 226px;
-        height: 445px;
-        top: 0;
-        position: absolute;
-        content: "";
-        right: 260px;
-        transform: skew(-25deg);
-        background:#a3bcca;
-        opacity: 0.6;
-        z-index: 10;
+    ul.soc-media li {
+        margin-right: 7px;
     }
     .banner{
         background: url("../images/csm_Surgical_instruments_traumatology_1920x495_01_aa87c29d65.png") left no-repeat;
@@ -564,76 +785,7 @@ footer .made-by a+a {
         left: 50%;
         transform: translate(-50%, 0);
     }
-    .text-banner{
-        position: absolute;
-        content: "";
-        background: url("../images/triangles-png-46460.png") right no-repeat;
-        width: 100%;
-        height: 100%;
-        right: 0;
-        z-index: 15;
-    }
 
-    .text-banner>p {
-        position: absolute;
-        right: 95px;
-        top: 59px;
-        font-family: 'Open Sans';
-        font-size: 13px;
-        text-align: right;
-    }
-    .text-banner p:first-child +p{
-        opacity: 0.6;
-        font-size: 13px;
-        position: relative;
-    }
-    .text-banner p:first-child+p:after{
-        position: absolute;
-        content: "";
-        width: 40px;
-        height: 5px;
-        background: #6bdbd5;
-        bottom: -21px;
-        right: 0px;
-    }
-    .text-banner p.implant-banner.white {
-        text-transform: uppercase;
-        font-family: "Open Sans";
-        z-index: 20;
-        position: relative;
-        top: 67px;
-        opacity: 1;
-        font-size: 15px;
-    }
-    p.responsibility {
-        top: 163px;
-        text-transform: capitalize;
-        font-size: 31px;
-        font-weight: bold;
-        opacity: 0.9;
-    }
-    p.reliability {
-        font-size: 29px;
-        top: 203px;
-        text-transform: capitalize;
-        opacity: 0.75;
-    }
-    p.quality {
-        font-size: 25px;
-        top: 243px;
-        text-transform: capitalize;
-        opacity: 0.6;
-    }
-    .text-banner>a.podrobneebtn{
-        right: 95px;
-        top: 299px;
-        position: absolute;
-        display: block;
-        padding: 17px 50px;
-        background-color: #3dc8bd;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
     .text-banner ul li{
         position: absolute;
         content: "";
@@ -778,7 +930,9 @@ footer .made-by a+a {
         background-color: #ffffff;
         color: #3dc8bd;
     }
-
+    .logo-copyright {
+      margin: 0;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -791,7 +945,7 @@ footer .made-by a+a {
     a.nav-link.dropdown-toggle.blue:before {
         left: 30px;
     }
-    a.nav-link.callback.white {
+    a.nav-link.callback{
         padding: 12px 33px 15px;
     }
     .navbar{
@@ -837,7 +991,7 @@ footer .made-by a+a {
         overflow: hidden;
         opacity: 0;
     }
-    a.nav-link.callback.white {
+    a.nav-link.callback {
         padding: 12px 33px 15px;
     }
     .header-menu{
@@ -847,6 +1001,7 @@ footer .made-by a+a {
     }
     a.phone.blue {
         top: 13px;
+        right: 52px;
     }
     .banner{
         max-width: 1620px;
