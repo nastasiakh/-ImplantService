@@ -649,37 +649,37 @@ h2:after{
         color: #444444;
         margin-bottom: 31px;
     }
-    .soc-media-footer ul.justify-content-around li{
+    .soc-media-footer ul.justify-content-around li a{
         position: relative;
     }
-    .soc-media-footer ul.justify-content-around li:before{
+    .soc-media-footer a:before{
         content: "";
         position: absolute;
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background: url("../images/css_sprites.png");
-        background-position: -5px -3px;
+        background: url("../images/css_sprites.png") -5px -3px;
+        left: 0;
     }
-    .soc-media-footer ul.justify-content-around li:before:hover{
+    .soc-media-footer ul.justify-content-around li:hover a.fb:before{
         background-position: -5px -64px;
     }
-    .soc-media-footer ul.justify-content-around li+li:before{
+    .soc-media-footer ul.justify-content-around li a.inst:before{
         background-position: -62px -3px;
     }
-    .soc-media-footer ul.justify-content-around li+li:before:hover{
+    .soc-media-footer ul.justify-content-around li:hover a.inst:before{
         background-position: -62px -64px;
     }
-    .soc-media-footer ul.justify-content-around li+li+li:before{
+    .soc-media-footer ul.justify-content-around li a.tg:before{
         background-position: -5px -34px;
     }
-    .soc-media-footer ul.justify-content-around  li+li+li:before:hover{
+    .soc-media-footer ul.justify-content-around li:hover a.tg:before{
         background-position: -5px -94px;
     }
-    .soc-media-footer ul.justify-content-around li+li+li+li:before{
+    .soc-media-footer ul.justify-content-around li a.vb:before{
         background-position: -118px -3px;
     }
-    .soc-media-footer ul.justify-content-around li+li+li+li:before:hover{
+    .soc-media-footer ul.justify-content-around li:hover a.vb:before{
         background-position: -118px -64px;
     }
     .soc-media-footer ul li>a {
