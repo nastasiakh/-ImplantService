@@ -34,6 +34,7 @@
                     <li><a href="#"></a></li>
                 </ul>
             </section>
+            <hr class="top-hr-line"/>
             <section class="header-menu">
                 <nav class="navbar container navbar-expand-lg">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsed-area">
@@ -50,17 +51,17 @@
                                 <a class="nav-link dropdown-toggle blue" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item blue" href="#">Травматология</a>
+                                    <a class="dropdown-item" href="#">Травматология</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item blue" href="#">Ортопедия</a>
+                                    <a class="dropdown-item" href="#">Ортопедия</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item blue" href="#">Спортивная травма</a>
+                                    <a class="dropdown-item" href="#">Спортивная травма</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item blue" href="#">Нейрохирургия</a>
+                                    <a class="dropdown-item" href="#">Нейрохирургия</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item blue" href="#">Инструменты</a>
+                                    <a class="dropdown-item" href="#">Инструменты</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item blue" href="#">Оборудование</a>
+                                    <a class="dropdown-item" href="#">Оборудование</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -83,6 +84,7 @@
                 </nav>
                 <a class="phone blue" href="#"><span>(068) 068 11 33</span></a>
             </section>
+            <hr class="bottom-hr-line"/>
         </header>
 
         <section class="slider container-fluid">
@@ -259,7 +261,7 @@
                     <h2 class="text-upper">Отзывы</h2>
                     <div class="owl-carousel owl-theme feedback">
                         <div class="item column justify-content-center align-content-center">
-                            <img src="images/otziv.png" alt="otziv"/>
+                            <img class="feedback-img" src="images/otziv.png" alt="otziv"/>
                             <div class="text-center azure">
                                 <p class="text-upper name">сергей верхов</p>
                                 <p class="job">Главврач клиники “Клиника”</p>
@@ -267,7 +269,7 @@
                             </div>
                         </div>
                         <div class="item column justify-content-center align-content-center">
-                            <img src="images/otziv.png" alt="otziv"/>
+                            <img class="feedback-img" src="images/otziv.png" alt="otziv"/>
                             <div class="text-center azure">
                                 <p class="text-upper name">сергей верхов</p>
                                 <p class="job">Главврач клиники “Клиника”</p>
@@ -275,7 +277,7 @@
                             </div>
                         </div>
                         <div class="item column justify-content-center align-content-center">
-                            <img src="images/otziv.png" alt="otziv"/>
+                            <img class="feedback-img" src="images/otziv.png" alt="otziv"/>
                             <div class="text-center azure">
                                 <p class="text-upper name">сергей верхов</p>
                                 <p class="job">Главврач клиники “Клиника”</p>
@@ -501,6 +503,7 @@
             var swiper = new Swiper('.swiper-container', {
                 pagination: {
                     el: '.swiper-pagination',
+                    clickable: true,
                 },
             });
 
